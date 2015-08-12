@@ -1,0 +1,129 @@
+---
+layout: base
+title: Drip Campaign
+---
+
+<!--Scroll Effects-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.7/jquery.smoove.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.7/jquery.smoove.min.js"></script>
+
+
+<style>
+	h1 {
+		font-size: 50px;
+	}
+	#colorsection {
+		color: white;
+		text-align: center;
+		
+	}
+	#whitesection {
+		color: #00bcd4;
+		text-align: center;
+	}
+	.btn-xl {  
+    padding: 15px 22px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 6px;
+  }
+
+</style>
+<!--header-->
+<section class="text-center" style="background-color: #00bcd4;">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="colorsection" style="perspective: 1000px;">
+			<h1>Drip Campaigns</h1>
+			<h2 style="line-height: 40px;">Not just for onboarding emails anymore
+			</h2>
+			<img src="{{ '/dc_process.gif' | prepend: site.assets_images }}" class="text-center;" style="width: 500px; margin-top: 50px; margin-bottom:-50px;">
+			<img class="drips" data-move-x="200px" data-move-y="-800px" src="{{ '/drip_header.svg' | prepend: site.assets_images }}" style="transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(200px) translateY(-800px); margin-left: 800px; margin-top: -450px; height: 250px;">
+
+		</div>
+	</div>
+</div>
+</section>
+<div class="text-center">
+<img src="{{ '/driparrow.svg' | prepend: site.assets_images }}" style="height: 75px; margin-top: -25px;">
+</div>
+<!-- getting started-->
+<section>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="whitesection" style="perspective: 1000px;">
+			<h1 style="margin-top: -55px;">Onboarding</h1>
+			<h2>Most common use case for drip campaigns</h2>
+			<img class="drips" data-move-x="-600px" data-move-y="0px" src="{{ '/dc_onboard.png' | prepend: site.assets_images }}" style="transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(-600px) translateY(0px); float: left; margin-left: 150px;  height: 300px; margin-top: -100px;">
+		</div>
+	</div>
+</div>
+</section>
+<!--use cases-->
+<section style="background-color: #00bcd4;">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="colorsection" style="perspective: 1000px;">
+			<h1>Abandoned Shopping Cart</h1>
+			<img class="drips" data-move-x="600px" data-move-y="0px" src="{{ '/dc_cart.png' | prepend: site.assets_images }}" style="transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(600px) translateY(0px); float: right; margin-right: 150px; height: 300px; margin-top: -50px;">
+		</div>
+	</div>
+</div>
+</section>
+<!--setting up with swu-->
+<section>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="whitesection" style="perspective: 1000px;">
+			<h1>Post Purchase Survey</h1>
+			<img class="drips" data-move-x="-600px" data-move-y="0px" src="{{ '/dc_survey.png' | prepend: site.assets_images }}" style="transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(-600px) translateY(0px); float: left; margin-left: 150px; height: 300px; margin-top: -50px;">
+		</div>
+	</div>
+</div>
+</section>
+<!--CTA-->
+<section style="background-color: #00bcd4;">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="colorsection">
+			<h1>Setting up with sendwithus</h1>
+		</div>
+		<div class="row" id="colorsection">
+			<div class="col-md-4" style="perspective: 1000px;">
+				<img class="drips" data-move-x="-200px" data-move-y="200px" src="{{ '/dripicon1.svg' | prepend: site.assets_images }}" style="transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(-200px) translateY(200px); height: 95px;">
+				<h2>Easy Set Up</h2>
+			</div>
+			<div class="col-md-4" style="perspective: 1000px;">
+				<img class="drips" data-move-x="-200px" data-move-y="200px" src="{{ '/dripicon2.svg' | prepend: site.assets_images }}" style=" transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(-200px) translateY(200px); height: 95px;">
+				<h2>Highly Flexible</h2>
+			</div>
+			<div class="col-md-4" style="perspective: 1000px;">
+				<img class="drips" data-move-x="-400px" data-move-y="200px" src="{{ '/dripicon3.svg' | prepend: site.assets_images }}" style=" transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(-400px) translateY(200px); height: 95px;">
+				<h2>Easy to Optimize</h2>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="whitesection">
+			<h1>Get Started Today</h1>
+			<br><br>
+			<a href="https://app.sendwithus.com/"><button class="btn btn-orange btn-xl">Sign up today</button></a>
+		</div>
+	</div>
+</div>
+</section>
+
+<script>
+
+	$('.drips').smoove({
+		 offset: '10%'
+	});			   
+	
+
+</script>
+
