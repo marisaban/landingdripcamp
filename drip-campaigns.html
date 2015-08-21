@@ -1,0 +1,123 @@
+---
+layout: base
+title: Drip Campaign
+
+# Body class to target with JS
+class: dripcamp
+---
+
+<!--Scroll Effects-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.7/jquery.smoove.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.7/jquery.smoove.min.js"></script>
+
+
+<!--header-->
+<section class="text-center" style="background-color: #00bcd4;">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="colorsection">
+			<h1>Drip Campaigns</h1>
+			<h2 style="line-height: 40px;">Multiple Emails in a Timed Series
+			</h2>
+		</div>
+	</div><!--first row-->
+	<div class="row">
+			<div class="col-md-12" style="margin-bottom: -50px;">
+				<img src="{{ '/new_dcheader.png' | prepend: site.assets_images }}" style="margin-top: 25px; margin-right: 25px; height: 350px;">
+				<h2 style="color:white; word-spacing:95px; margin-top:-25px; margin-left: 15px;"><a href="#onboard" style="color:white;">Onboard</a> <a href="#survey" style="color:white;">Survey</a> <a href="#shopcart" style="color:white;">Reminder</a></h2>
+			</div>
+	</div><!--row-->
+</div>
+</section>
+<div class="text-center" id="onboard">
+<img src="{{ '/driparrow.svg' | prepend: site.assets_images }}" style="height: 75px; margin-top: -25px;">
+</div>
+<!-- getting started-->
+<section>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4" id="whitesection" style="perspective: 1000px;">
+			<img class="drips" data-move-x="-600px" data-move-y="0px" src="{{ '/dc_onboardthanks.jpg' | prepend: site.assets_images }}" style="transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(-600px) translateY(0px); margin-top: 5px; margin-right:100px;">
+		</div>
+		<div class="col-md-8" id="whitesection">
+			<h1 style="text-align: left; margin-top: -5px;">Onboarding</h1>
+			<h2 style="line-height:45px; text-align: left;">Your customers receive a Welcome email when they sign up, but that’s just the first step in your onboarding process. Onboarding campaigns gently introduce your customers to your product and features. Learn more about different onboarding campaign techniques  in our  <a href="https://www.sendwithus.com/resources/guide#chapter-2-onboarding-emails">Guide to Onboarding Campaigns</a>.
+			</h2>
+		</div>
+	</div>
+</div>
+</section>
+<!--use cases-->
+<section style="background-color: #00bcd4;" id="survey">
+<div class="container">
+	<div class="row">
+		</div>
+		<div class="col-md-8" id="colorsection">
+			<h1 style="margin-top: 10px; text-align: left;">Customer Feedback</h1>
+			<h2 style="line-height:45px;text-align: left;">Email is a great way to ask customers for feedback or reviews. A common example is sending a Net Promoter Score survey after a successful transaction, which is a great way to measure customer loyalty. Learn more about setting up your own NPS survey with our <a href="http://blog.sendwithus.com/measuring-nps-with-wufoo-and-free-survey-templates/" style="color: white; text-decoration: underline;">guide and templates</a>.
+			</h2>
+		</div>
+		<div class="col-md-4" id="colorsection">
+			<img class="drips" data-move-x="600px" data-move-y="0px" src="{{ '/dollarshave.png' | prepend: site.assets_images }}" style="transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(600px) translateY(0px); margin-top: 15px; ">
+		</div>
+	</div>
+</div>
+</section>
+<!--setting up with swu-->
+<section id="shopcart">
+<div class="container">
+	<div class="row">
+		<div class="col-md-4" id="whitesection" style="perspective: 1000px;">
+			<img class="drips" data-move-x="-600px" data-move-y="0px" src="{{ '/abandon_dl.png' | prepend: site.assets_images }}" style="transition: all 1s ease, opacity 1.5s ease; opacity: 0; transform: translateX(-600px) translateY(0px); margin-top: 5px; margin-right:100px;">
+		</div>
+		<div class="col-md-8" id="whitesection">
+			<h1 style="margin-top: 5px; text-align: left;">Abandoned Shopping Cart</h1>
+			<h2 style="line-height:45px; margin-top: 50px; text-align: left;">Abandoned carts occur when a customer gets close to purchasing but then drops off. Sending personalized emails  afterward  can significantly increase customer conversions; in fact, <a href="http://www.salecycle.com/cart-abandonment-stats/">nearly 50% of abandoned cart emails are opened</a>, and a third of those can lead to a purchase.
+
+			</h2>
+		</div>
+	</div>
+</div>
+</section>
+<!--CTA-->
+<section style="background-color: #00bcd4;" id="setupsection">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="colorsection">
+			<h1 style="margin-top: -15px;">Benefits of using sendwithus</h1>
+		</div>
+		<div class="row" id="colorsection">
+			<div class="col-md-4" style="margin-top:65px;">
+				<a href="https://www.sendwithus.com/docs/quickstart"><img src="{{ '/onboard_icon.svg' | prepend: site.assets_images }}" ></a>
+				<a href="https://www.sendwithus.com/docs/quickstart" style="color:white;"><h2>Easy Set Up</h2></a>
+			</div>
+			<div class="col-md-4" style="margin-top:65px;">
+				<a href="https://www.sendwithus.com/features"><img src="{{ '/dc_code.svg' | prepend: site.assets_images }}" ></a>
+				<a href="https://www.sendwithus.com/ab-testing" style="color:white;"><h2>Highly Flexible</h2></a>
+			</div>
+			<div class="col-md-4" style="margin-top:65px;">
+				<a href="https://www.sendwithus.com/ab-testing"><img src="{{ '/dc_abtest.svg' | prepend: site.assets_images }}"></a>
+				<a href="https://www.sendwithus.com/ab-testing" style="color:white;"><h2>Easy to Optimize</h2></a>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="whitesection">
+			<h1>Get Started Today</h1>
+			<br><br>
+			<a href="https://app.sendwithus.com/signup"><button class="btn btn-orange btn-xl">Sign Up</button></a>
+		</div>
+	</div>
+</div>
+</section>
+
+<script>
+
+
+</script>
+
